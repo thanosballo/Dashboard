@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
+}
 main{
 display: grid;
 grid-template-columns: repeat(5,1fr);
@@ -14,6 +21,10 @@ aside{
     background-color: blue;
     grid-column-end: span 1;
     grid-row-end: span 6;
+    padding: 2rem;
+}
+aside>div {
+    margin-top: 2rem;
 }
 header{
     background-color: bisque;
@@ -23,4 +34,20 @@ section{
     background-color: tan;
     grid-column-end:span 4;
     grid-row-end:span 5;
+}
+.flex {
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img {
+    width: 30px;
 }
